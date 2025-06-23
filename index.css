@@ -1,0 +1,332 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #f9f6f6;
+  background-color: #0d0d0d;
+}
+
+.hero {
+  background-image: url('image hotels/WhatsApp Image 2025-06-20 à 11.59.38_657e99e6.jpg');
+  background-size:contain;
+  background-position:bottom;
+  height: 100vh;
+  color: rgb(254, 252, 252);
+}
+
+#recherche {
+  display:flexbox;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-content {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 25px;
+  background: #052f45;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.booking-form {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+.booking-form form {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.booking-form input,
+.booking-form button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form button {
+  background: #0b0b0b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+.why-choose {
+  padding: 60px 20px;
+  background: #0b0b0b;
+  text-align: center;
+}
+
+.why-choose h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #f6f4f4;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.feature h3 {
+  color: #0a0a0a;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.feature p {
+  font-size: 15px;
+  color: #555;
+}
+
+
+
+
+
+
+.hotels {
+   background-image: url('image hotels/WhatsApp Image 2025-06-20 à 11.59.38_657e99e6.jpg');
+  padding: 60px 20px;
+  background: #010101;
+  text-align: center;
+}
+.hotel-list {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.hotel-card {
+  background: #f9f7f7;
+  border-radius: 10px;
+  max-width: 280px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  padding-bottom: 15px;
+}
+.hotel-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.hotel-card h3 {
+  color: #141414;
+  margin: 15px 0 10px;
+}
+.hotel-card p {
+  color: #555;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+
+
+
+
+.hotel-list-page-card-hero{
+  background-image: url('image hotels/WhatsApp Image 2025-06-20 à 11.59.38_657e99e6.jpg');
+  background-size:contain;
+  background-position:bottom;
+  height: 100vh;
+  color: rgb(10, 10, 10);
+}
+.hotel-list-page {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.hotel-list-page-card{
+  background: #f9f7f7;
+  border-radius: 10px;
+  max-width: 280px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  padding-bottom: 15px;
+ }
+.hotel-list-page img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.hotel-list-page h3 {
+  color: #0d0d0d;
+  margin: 15px 0 10px;
+}
+.hotel-list-page p {
+  color: #555;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+
+
+
+
+.testimonials {
+  padding: 60px 20px;
+  background: #101010;
+  text-align: center;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background: #181717;
+  padding: 25px;
+  max-width: 300px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow:#faf8f8;
+}
+
+.testimonial h4 {
+  margin-top: 15px;
+  color: #faf7f7;
+  font-weight: normal;
+}
+
+
+
+
+ 
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}.simple-header {
+  background-color: #0f092f;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.reservation-form, .contact-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.reservation-form form, .contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px;
+  background-color: #b6b600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.map {
+  margin-top: 30px;
+}#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  display: none;
+  background-color: #00b649;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  background-color: #8a022d;
+}

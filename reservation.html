@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Réservation – KinStay</title>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <button id="backToTop" title="Retour en haut">↑</button>
+  <header class="simple-header">
+     <nav class="navbar">
+      <h1 class="logo">KinStay</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="hotels.html">Hotels</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+      </ul>
+    </nav>
+
+    <h1>Réservez votre séjour</h1>
+  </header>
+
+  <section class="reservation-form">
+    <form>
+      <label>Nom complet</label>
+      <input type="text" placeholder="Votre nom" required />
+
+      <label>Email</label>
+      <input type="email" placeholder="exemple@email.com" required />
+
+      <label>Hôtel</label>
+      <select required>
+        <option value="">Sélectionner un hôtel</option>
+        <option>Kin Luxe</option>
+        <option>Résidence Émeraude</option>
+        <option>Grand Hôtel Kinshasa</option>
+      </select>
+
+      <label>Date d’arrivée</label>
+      <input type="date" required />
+
+      <label>Date de départ</label>
+      <input type="date" required />
+
+      <label>Nombre de personnes</label>
+      <input type="number" min="1" value="1" required />
+
+      <button type="submit">Réserver maintenant</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 KinStay – Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
