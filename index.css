@@ -113,21 +113,20 @@ body {
 
 
 
-.why-choose {
+.Pourquoi-choisir {
   padding: 60px 20px;
   background: #0b0b0b;
   text-align: center;
 }
 
-.why-choose h2 {
+.Pourquoi-choisir h2 {
   font-size: 32px;
   margin-bottom: 40px;
   color: #f6f4f4;
 }
 
 .features {
-  display: flex;
-  flex-wrap: wrap;
+  display:flex;
   justify-content: center;
   gap: 30px;
 }
@@ -164,7 +163,6 @@ body {
 }
 .hotel-list {
   display:flex;
-  flex-wrap:wrap;
   justify-content: center;
   gap: 30px;
   margin-top: 30px;
@@ -196,15 +194,9 @@ body {
 
 
 
-.hotel-list-page-card-hero{
-  background-image: url('image hotels/WhatsApp Image 2025-06-20 à 11.59.38_657e99e6.jpg');
-  background-size:contain;
-  background-position:bottom;
-  height: 100vh;
-  color: rgb(10, 10, 10);
-}
+
 .hotel-list-page {
-  display:flex;
+  display:grid;
   flex-wrap:wrap;
   justify-content: center;
   gap: 30px;
@@ -229,7 +221,7 @@ body {
   margin: 15px 0 10px;
 }
 .hotel-list-page p {
-  color: #555;
+  color: #010821;
   font-size: 14px;
   padding: 0 10px;
 }
@@ -272,12 +264,18 @@ body {
 
  
 .footer {
-  background: #222;
-  color: white;
+  background: #f9f7f7;
+  color: rgb(18, 17, 17);
   text-align: center;
   padding: 20px;
+
+
+
+
+
+
 }.simple-header {
-  background-color: #0f092f;
+  background-color: #11023b;
   color: white;
   padding: 40px 20px;
   text-align: center;
