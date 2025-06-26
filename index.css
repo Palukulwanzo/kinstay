@@ -230,32 +230,32 @@ body {
 
 
 
-.temoignage-page {
+.temoignage {
   padding: 60px 20px;
-  background: #101010;
+  background: #0f0f0f;
   text-align: center;
 }
 
-.temoignage-page {
-  display: grid;
+.temoignage-list {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   margin-top: 30px;
 }
 
-.temoignage-page {
-  background: #181717;
+.temoin {
+  background: #040404;
   padding: 25px;
   max-width: 300px;
   border-radius: 10px;
   font-style: italic;
-  box-shadow:#faf8f8;
+  box-shadow: 0 0 10px rgba(240, 239, 239, 0.05);
 }
 
-.temoignage-page h4 {
+.temoin h4 {
   margin-top: 15px;
-  color: #faf7f7;
+  color: #f7f5f5;
   font-weight: normal;
 }
 
