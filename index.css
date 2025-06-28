@@ -301,7 +301,7 @@ input, select, textarea {
 
 button {
   padding: 12px;
-  background-color: #b6b600;
+  background-color: #1d0d4f;
   color: white;
   border: none;
   cursor: pointer;
@@ -326,5 +326,5 @@ button {
 }
 
 #backToTop:hover {
-  background-color: #8a022d;
+  background-color: #181717;
 }
