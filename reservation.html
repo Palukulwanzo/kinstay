@@ -1,57 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Réservation – KinStay</title>
-  <link rel="stylesheet" href="index.css"/>
+  <meta charset="UTF-8">
+  <title>Réservation | KinStay</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <header class="simple-header">
-     <nav class="navbar">
-      <h1 class="logo">KinStay</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="hotels.html">Hotels</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="reservation.html">Réservation</a></li>
-      </ul>
-    </nav>
 
-    <h1>Réservez votre séjour</h1>
+  <header>
+    <h1>KinStay</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="hotels.html">Hôtels</a>
+      <a href="reservation.html" class="active">Réservation</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <section class="reservation-form">
-    <form>
-      <label>Nom complet</label>
-      <input type="text" placeholder="Votre nom" required />
+  <main>
+    <section class="formulaire-reservation">
+      <h2>Formulaire de réservation</h2>
 
-      <label>Email</label>
-      <input type="email" placeholder="exemple@email.com" required />
+      <form id="formReservation">
+        <label>Nom :
+          <input type="text" name="nom" required>
+        </label>
 
-      <label>Hôtel</label>
-      <select required>
-        <option value="">Sélectionner un hôtel</option>
-        <option>Kin Luxe</option>
-        <option>Résidence Émeraude</option>
-        <option>Grand Hôtel Kinshasa</option>
-      </select>
+        <label>Prénom :
+          <input type="text" name="prenom" required>
+        </label>
 
-      <label>Date d’arrivée</label>
-      <input type="date" required />
+        <label>Email :
+          <input type="email" name="email" required>
+        </label>
 
-      <label>Date de départ</label>
-      <input type="date" required />
+        <label>Choix de l'hôtel :
+          <select name="hotel" required>
+            <option value="">-- Choisissez un hôtel --</option>
+            <option value="Memling">Hôtel Memling</option>
+            <option value="Fleuve Congo">Fleuve Congo Hôtel</option>
+            <option value="Hilton">Hôtel Hilton</option>
+          </select>
+        </label>
 
-      <label>Nombre de personnes</label>
-      <input type="number" min="1" value="1" required />
+        <label>Date d'arrivée :
+          <input type="date" name="arrivee" required>
+        </label>
 
-      <button type="submit">Réserver maintenant</button>
-    </form>
-  </section>
+        <label>Date de départ :
+          <input type="date" name="depart" required>
+        </label>
 
-  <footer class="footer">
-    <p>&copy; 2025 KinStay – Tous droits réservés.</p>
+        <label>Nombre de chambres :
+          <input type="number" name="chambres" min="1" required>
+        </label>
+
+        <button type="submit">Réserver</button>
+      </form>
+
+      <div id="confirmation" class="confirmation"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 KinStay - Tous droits réservés</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

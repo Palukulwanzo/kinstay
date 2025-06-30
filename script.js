@@ -1,17 +1,20 @@
+document.getElementById("formReservation").addEventListener("submit", function(e) {
+  e.preventDefault();
 
-window.onload = function() {
-  document.getElementById("popup").style.display = "flex";
-};
+  const nom = this.nom.value;
+  const prenom = this.prenom.value;
+  const email = this.email.value;
+  const hotel = this.hotel.value;
+  const arrivee = this.arrivee.value;
+  const depart = this.depart.value;
+  const chambres = this.chambres.value;
 
-function fermerPopup() {
-  document.getElementById("popup").style.display = "none";
-}
+  const confirmation = `
+    ✅ Merci ${prenom} ${nom},<br>
+    Votre réservation à l'hôtel <strong>${hotel}</strong> est confirmée du <strong>${arrivee}</strong> au <strong>${depart}</strong><br>
+    Nombre de chambres : ${chambres}<br>
+    Un email de confirmation a été envoyé à <strong>${email}</strong>.
+  `;
 
-
-document.getElementById("recherche").addEventListener("input", function () {
-  let filtre = this.value.toLowerCase();
-  let hotels = document.querySelectorAll("#liste-hotels li");
-  hotels.forEach(function (hotel) {
-    hotel.style.display = hotel.textContent.toLowerCase().includes(filtre) ? "block" : "none";
-  });
+  document.getElementById("confirmation").innerHTML = confirmation;
 });
