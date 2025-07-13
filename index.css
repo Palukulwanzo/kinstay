@@ -23,36 +23,19 @@ body {
   align-items: center;
   text-align: center;
 }
+
+/* KINSTAY ET LES SECTION*/
 .topbar {
   background-color: #0e1a2b;
   color: white;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
+  justify-content:space-between;
+  align-items:center;
+  padding: 14px 15px;
 }
-
-
-
-.hero-section {
-  background-color: #0e1a2b;
-  padding: 40px;
-  text-align: center;
-  color: white;
-}
-
-.hero-section h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
-.hotels {
-  padding: 40px;
-  background-color: #f0f0f0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+.logo {
+  font-size: 70px;
+  font-weight:bold;
 }
 .navigation a {
   color: white;
@@ -60,21 +43,31 @@ body {
   text-decoration: none;
 }
 
-.logo {
-  font-size: 50px;
-  font-weight: bold;
-}
 
-
-
-
+/* bouton commencer la reservation*/
 .btn {
-  padding: 10px 25px;
-  background: #052f45;
+  padding: 10px 100px;
+  background: #1e086d;
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
+ text-decoration:none;
+
 }
+
+/* NOS HOTELS A PARTENAIRS A KIN*/
+.hero-section {
+  background-color: #0e1a2b;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+
+
+
 
 .booking-form {
   position: fixed;
@@ -276,8 +269,7 @@ body {
 }
 
 
-
-
+ 
 
 
 
