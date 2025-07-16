@@ -17,23 +17,24 @@
     <a href="contact.html">Contact</a>
   </nav>
   </header>
-<section class="hero-section">
-  <h1>Formulaire de réservation</h1>
-</section>
 
   <main>
+    <section class="hero-section">
+  <h1>Formulaire de réservation</h1>
+    </section>
+
     <section class="section reservation">
       <form id="formReservation">
         <label>Nom :
-          <input type="text" name="nom" required>
+        <input type="text" name="nom" required>
         </label>
 
         <label>Prénom :
-          <input type="text" name="prenom" required>
+        <input type="text" name="prenom" required>
         </label>
 
         <label>Email :
-          <input type="email" name="email" required>
+        <input type="email" name="email" required>
         </label>
 
         <label>Choix de l'hôtel :
@@ -46,19 +47,22 @@
         </label>
 
         <label>Date d'arrivée :
-          <input type="date" name="arrivee" required>
+        <input type="date" name="arrivee" required>
         </label>
 
         <label>Date de départ :
-          <input type="date" name="depart" required>
+        <input type="date" name="depart" required>
         </label>
 
         <label>Nombre de chambres :
-          <input type="number" name="chambres" min="1" required>
+        <input type="number" name="chambres" min="1" required>
         </label>
 
         <button type="submit">Réserver</button>
-      </form>
+      </form> 
+      <div id="confirmation" class="confirmation"></div>
+      </section>
+      </main>
 
       
   </main>

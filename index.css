@@ -64,44 +64,7 @@ body {
 
 
 
-
-
-
-
-
-.booking-form {
-  position: fixed;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px 30px;
-  border-radius: 10px;
-}
-
-.booking-form form {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.booking-form input,
-.booking-form button {
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.booking-form button {
-  background: #0b0b0b;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-
-
+/* Pourquoi-choisir */
 
 .Pourquoi-choisir {
   position: relative;
@@ -144,7 +107,7 @@ body {
 
 
 
-
+/* les hotels*/
 
 .hotels {
   position: relative;
@@ -196,7 +159,7 @@ body {
   gap: 30px;
   padding: 20px;
   margin-top: 30px;
-  background-color: #121212; /* si tu veux un fond sombre */
+  background-color: #121212; 
 }
 
 .hotel-card {
@@ -241,9 +204,9 @@ body {
   max-width: 1000px;
   margin: auto;
   padding: 2em;
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(8, 1, 37);
   border-radius: 10px;
-  box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #060126;
 }
 
 .reservation form label {
@@ -274,7 +237,7 @@ body {
 
 
 
-
+/*temoignage */
 .temoignage {
   position: relative;
   padding: 60px 20px;
@@ -304,19 +267,6 @@ body {
   color: #f7f5f5;
   font-weight: normal;
 }
-
-
-
-
-
-.footer {
-  background: #f9f7f7;
-  color: rgb(18, 17, 17);
-  text-align: center;
-  padding: 20px;
-}
-
-
 
 
 
@@ -354,5 +304,18 @@ body {
 .whatsapp-button:hover {
   background-color: #1ebe5d;
 }
+
+
+
+
+.footer {
+  background: #f9f7f7;
+  color: rgb(18, 17, 17);
+  text-align: center;
+  padding: 20px;
+}
+
+
+
 
 

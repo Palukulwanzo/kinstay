@@ -1,20 +1,25 @@
-document.getElementById("formReservation").addEventListener("submit", function(e) {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("formReservation");
+  const confirmationDiv = document.getElementById("confirmation");
 
-  const nom = this.nom.value;
-  const prenom = this.prenom.value;
-  const email = this.email.value;
-  const hotel = this.hotel.value;
-  const arrivee = this.arrivee.value;
-  const depart = this.depart.value;
-  const chambres = this.chambres.value;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const confirmation = `
-    ✅ Merci ${prenom} ${nom},<br>
-    Votre réservation à l'hôtel <strong>${hotel}</strong> est confirmée du <strong>${arrivee}</strong> au <strong>${depart}</strong><br>
-    Nombre de chambres : ${chambres}<br>
-    Un email de confirmation a été envoyé à <strong>${email}</strong>.
-  `;
+    const nom = form.nom.value;
+    const prenom = form.prenom.value;
+    const email = form.email.value;
+    const hotel = form.hotel.value;
+    const arrivee = form.arrivee.value;
+    const depart = form.depart.value;
+    const chambres = form.chambres.value;
 
-  document.getElementById("confirmation").innerHTML = confirmation;
+    const message = `
+      ✅ Merci ${prenom} ${nom},<br>
+      Votre réservation à l'hôtel <strong>${hotel}</strong> est confirmée du <strong>${arrivee}</strong> au <strong>${depart}</strong>.<br>
+      Nombre de chambres : ${chambres}<br>
+      Un email de confirmation a été envoyé à <strong>${email}</strong>.
+    `;
+
+    confirmationDiv.innerHTML = message;
+  });
 });
